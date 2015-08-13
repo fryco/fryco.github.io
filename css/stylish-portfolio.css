@@ -202,18 +202,25 @@ hr.small {
 }
 
 /* Callout */
-
 .callout-up {
     display: table;
     width: 100%;
+    position: relative;
     height: 200px;
-    color: #fff;
-    opacity: 0.5;
+}
+.callout-up :before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: url(../img/www/sch_up.jpg) no-repeat center center scroll;
+    opacity: 0.15;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover; 
+    -o-background-size: cover;
 }
 
 .callout-down {
@@ -221,7 +228,7 @@ hr.small {
     width: 100%;
     height: 200px;
     color: #fff;
-    opacity: 0.5;
+    opacity: 0.2;
     background: url(../img/www/sch_down.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
